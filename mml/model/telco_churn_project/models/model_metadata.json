@@ -1,0 +1,93 @@
+{
+    "champion_model": "XGBoost",
+    "champion_cv_roc_auc": 0.8461355143059919,
+    "models_summary": {
+        "RandomForest": {
+            "cv_roc_auc": 0.8460034422631827,
+            "cv_recall": 0.7471571906354516,
+            "cv_f1": 0.6348550500409686,
+            "cv_precision": 0.5520078995987718,
+            "test_roc_auc": 0.8456056730992791,
+            "test_recall": 0.7700534759358288,
+            "test_precision": 0.5413533834586466,
+            "test_f1": 0.6357615894039735,
+            "test_accuracy": 0.765791341376863,
+            "best_params": {
+                "max_depth": 8,
+                "min_samples_split": 5,
+                "n_estimators": 200
+            }
+        },
+        "XGBoost": {
+            "cv_roc_auc": 0.8461355143059919,
+            "cv_recall": 0.7050167224080267,
+            "cv_f1": 0.6374939080004735,
+            "cv_precision": 0.581825900900516,
+            "test_roc_auc": 0.8439083933968843,
+            "test_recall": 0.7219251336898396,
+            "test_precision": 0.5555555555555556,
+            "test_f1": 0.627906976744186,
+            "test_accuracy": 0.772888573456352,
+            "best_params": {
+                "learning_rate": 0.05,
+                "max_depth": 3,
+                "n_estimators": 150,
+                "subsample": 1.0
+            }
+        },
+        "LightGBM": {
+            "cv_roc_auc": 0.8459422120451237,
+            "cv_recall": 0.7110367892976589,
+            "cv_f1": 0.638119065687096,
+            "cv_precision": 0.5788970374407169,
+            "test_roc_auc": 0.8428621250871889,
+            "test_recall": 0.7245989304812834,
+            "test_precision": 0.5508130081300813,
+            "test_f1": 0.625866050808314,
+            "test_accuracy": 0.7700496806245565,
+            "best_params": {
+                "learning_rate": 0.05,
+                "max_depth": 4,
+                "n_estimators": 100,
+                "num_leaves": 31
+            }
+        }
+    },
+    "feature_names": [
+        "tenure",
+        "MonthlyCharges",
+        "TotalCharges",
+        "Average_Monthly_Cost_Ratio",
+        "Monthly_Cost_Ratio_Discrepancy",
+        "gender_Male",
+        "SeniorCitizen_1",
+        "Partner_Yes",
+        "Dependents_Yes",
+        "PhoneService_Yes",
+        "MultipleLines_No phone service",
+        "MultipleLines_Yes",
+        "InternetService_Fiber optic",
+        "InternetService_No",
+        "OnlineSecurity_No internet service",
+        "OnlineSecurity_Yes",
+        "OnlineBackup_No internet service",
+        "OnlineBackup_Yes",
+        "DeviceProtection_No internet service",
+        "DeviceProtection_Yes",
+        "TechSupport_No internet service",
+        "TechSupport_Yes",
+        "StreamingTV_No internet service",
+        "StreamingTV_Yes",
+        "StreamingMovies_No internet service",
+        "StreamingMovies_Yes",
+        "Contract_One year",
+        "Contract_Two year",
+        "PaperlessBilling_Yes",
+        "PaymentMethod_Credit card (automatic)",
+        "PaymentMethod_Electronic check",
+        "PaymentMethod_Mailed check",
+        "Has_Streaming_Services_1",
+        "Is_Long_Term_Contract_1",
+        "Has_Security_Package_1"
+    ]
+}

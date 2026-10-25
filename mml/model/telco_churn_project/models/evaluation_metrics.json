@@ -1,0 +1,80 @@
+{
+    "champion_model": "XGBoost",
+    "metrics": {
+        "accuracy": 0.772888573456352,
+        "precision": 0.5555555555555556,
+        "recall": 0.7219251336898396,
+        "f1": 0.627906976744186,
+        "roc_auc": 0.8439083933968843
+    },
+    "business_impact": {
+        "total_test_customers": 1409,
+        "actual_churners": 374,
+        "model_flagged_churners": 486,
+        "true_positives": 270,
+        "false_positives": 216,
+        "false_negatives": 104,
+        "true_negatives": 819,
+        "retention_success_rate_pct": 40.0,
+        "cost_per_outreach_usd": 25.0,
+        "projection_months": 12,
+        "total_annual_revenue_at_risk_usd": 326578.8,
+        "tp_annual_revenue_identified_usd": 240713.4,
+        "gross_revenue_saved_usd": 96285.36,
+        "campaign_cost_usd": 12150.0,
+        "net_revenue_saved_usd": 84135.36,
+        "roi_percentage": 692.47
+    },
+    "top_10_features": [
+        {
+            "feature": "Is_Long_Term_Contract_1",
+            "importance": 0.28073418140411377,
+            "importance_pct": 28.07341766357422
+        },
+        {
+            "feature": "InternetService_Fiber optic",
+            "importance": 0.08609902858734131,
+            "importance_pct": 8.609903335571289
+        },
+        {
+            "feature": "PaymentMethod_Electronic check",
+            "importance": 0.06540804356336594,
+            "importance_pct": 6.540804386138916
+        },
+        {
+            "feature": "PaperlessBilling_Yes",
+            "importance": 0.04987843707203865,
+            "importance_pct": 4.9878435134887695
+        },
+        {
+            "feature": "Dependents_Yes",
+            "importance": 0.04751695692539215,
+            "importance_pct": 4.75169563293457
+        },
+        {
+            "feature": "StreamingMovies_Yes",
+            "importance": 0.037770338356494904,
+            "importance_pct": 3.777033805847168
+        },
+        {
+            "feature": "TechSupport_Yes",
+            "importance": 0.03429374843835831,
+            "importance_pct": 3.429374933242798
+        },
+        {
+            "feature": "MultipleLines_Yes",
+            "importance": 0.03409888967871666,
+            "importance_pct": 3.409888982772827
+        },
+        {
+            "feature": "Monthly_Cost_Ratio_Discrepancy",
+            "importance": 0.032317616045475006,
+            "importance_pct": 3.2317616939544678
+        },
+        {
+            "feature": "OnlineSecurity_Yes",
+            "importance": 0.03189422935247421,
+            "importance_pct": 3.189422845840454
+        }
+    ]
+}
